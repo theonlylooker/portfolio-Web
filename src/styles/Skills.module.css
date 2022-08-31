@@ -1,0 +1,21 @@
+.skills{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media(min-width:750px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

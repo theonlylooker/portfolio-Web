@@ -1,0 +1,9 @@
+.home{
+  height: 90vh;
+  align-items: center;
+  justify-content: center;   
+}
+.name{
+    color:hsl(var(--clr-dark-blue));
+}
+

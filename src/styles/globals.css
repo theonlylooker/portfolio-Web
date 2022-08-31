@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*
+ 	hsl(28, 69%, 25%) brown
+    hsl(26, 100%, 94%) cream
+    hsl(141, 18%, 54%) some light green
+    hsl(230, 36%, 67%) some light blue
+    hsl(206, 94%, 19%) some dark blue
+*/
+
+/* ----------------- */
+/* custom properties */
+/* ----------------- */
+:root{
+    /*colors */
+    --clr-light-cream: 26 100% 94%;
+    --clr-light-green: 141 18% 54%;
+    --clr-light-blue:230 36% 67%;  
+    --clr-dark-brown: 28 69% 25%;
+    --clr-dark-blue: 206 94% 19%;
+    --clr-white: 0 0% 100%;
+
+    /*font size maybe clamp*/
+    --fs-500: 1.5rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+    --fs-700: 2.5rem;
+
+    /*font families */
+    --ff-inter : 'Inter', sans-serif;
+
+}
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-weight: 400;
+}
+
+/* Setting up the body */
+body{
+    font-family: var(--ff-inter);
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-dark-brown));
+    background-color: hsl(var(--clr-light-cream));
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/*setting up the images*/
+img,picture{
+    max-width: 100%;
+    display: block;
+}
+
+/*setting up button*/
+button{
+    font: inherit;
+}
+
+
+/* ----------------- */
+/* Utility classes   */
+/* ----------------- */
+
+/*general*/
+.flex{
+    display: flex;
+    gap: var(--gap,1rem);
+    width: 100%;
+}
+.container{
+    margin: 1rem 1rem;
+}
+.relative{
+    position: relative;
+}
+.centerText{
+    text-align: center;
+}
+.grid{
+    display: grid;
+}
+.footer{
+    text-align: center;
+}
+.card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    height: 50%;
+    background-color: hsl(var(--clr-white));
+    box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+}
+
+/*colors*/
+.bg-dark-brown{
+    background-color: hsl(var(--clr-dark-brown));
+}
+.bg-dark-blue{
+    background-color: hsl(var(--clr-dark-blue));
+}
+.bg-light-cream{
+    background-color: hsl(var(--clr-light-cream));
+}
+.bg-white{
+    background-color: hsl(var(--clr-white));
+}
+
+.text-dark-brown{
+    color: hsl(var(--clr-dark-brown));
+}
+.text-light-cream{
+    color: hsl(var(--clr-light-cream));
+}
+.text-white{
+    color: hsl(var(--clr-white));
+}
+
+/*typography*/
+.ff-inter{
+    font-family: var(--ff-inter);
+}
+
+.fs-700{
+    font-size: var(--fs-700);
+}
+.fs-500{
+    font-size: var(--fs-500);
+}
+.fs-400{
+    font-size: var(--fs-400);
+}
+.fs-300{
+    font-size: var(--fs-300);
+}
+
+.test{
+    border: solid red 1px;
+}

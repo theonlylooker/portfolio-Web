@@ -1,0 +1,26 @@
+.block2c{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1rem;
+    
+}
+.block1c{
+    grid-template-columns: 1fr;
+}
+
+.skillCard{
+    background-color: hsl(var(--clr-white));
+    width: 60%;
+    padding: 1rem;
+    max-width: 300px;
+    min-width: 250px;
+    box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.75);
+}
+
+@media(min-width:750px){
+    .skillCard{
+        min-width: 230px;
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,12 @@
+.about{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    gap: 1rem;
+    flex-direction: column;
+    text-align: justify;
+}

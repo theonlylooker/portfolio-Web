@@ -1,0 +1,26 @@
+.desktopNavBar{
+    display: none;
+}
+.mobileNavBar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.myHeader{
+    justify-content: space-between;
+    background-color: hsl(var(--clr-dark-blue)/.75);
+    color: hsl(var(--clr-white));
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    z-index: 99;
+}
+
+@media(min-width:650px) {
+.mobileNavBar{
+    display: none;
+}
+.desktopNavBar{
+    display: block;
+}
+}

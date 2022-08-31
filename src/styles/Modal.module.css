@@ -1,0 +1,10 @@
+.close{
+    display: none;
+}
+.open{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: hsl(var(--clr-dark-blue)/.75);
+    top: 3.625rem;
+}
