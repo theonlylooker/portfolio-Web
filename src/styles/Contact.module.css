@@ -1,0 +1,10 @@
+.sns{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.contact{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
