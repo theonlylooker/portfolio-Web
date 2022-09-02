@@ -15,7 +15,7 @@ const Contact = () => {
             width={50}
           />
         </Link>
-        <Link href={"https://www.linkedin.com/in/eduard-basurco-cayllahua/"}>
+        <Link href={"https://www.linkedin.com/in/eduard-basurco/"}>
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
             height={50}
